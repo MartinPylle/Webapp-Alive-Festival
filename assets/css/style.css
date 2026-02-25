@@ -1,20 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
 /* Variables */
 :root {
     --smSpacer: 25px;
     --mdSpacer: 50px;
     --xlSpacer: 75px;
+
+    --darkGreen: #2e4428;
+    --aliveGreen: #d7ffc2; 
+    --lightYellow: #ffffdf;
+    --pink: #ffb3e8;
+    --moseGreen: #5c571a;
+    --brown: #422d27; 
 }
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
     line-height: 150%;
     scroll-behavior: smooth;
 }
 
 p {
     font-size: 1rem;
+    color: var(--darkGreen);
 }
 
 a {
@@ -23,4 +34,5 @@ a {
 
 body {
     margin: 0;
+    background: var(--lightYellow);
 }
