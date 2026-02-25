@@ -12,6 +12,7 @@
     --pink: #ffb3e8;
     --moseGreen: #5c571a;
     --brown: #422d27;
+    --headershadow: 4px 4px 4px #000000cc;
 }
 
 * {
@@ -36,6 +37,8 @@ body {
     margin: 0;
     background: var(--lightYellow);
 }
+
+/* Header nav */
 
 
 /* Martin start */
@@ -64,10 +67,12 @@ body {
     background-color: var(--darkGreen);
     display: flex;
     justify-content: center;
+    gap: 2rem;
+    padding: 0.3rem;
 }
 
-
-
-i {
+.tab-bar-container a {
+    font-size: 35px;
     color: var(--aliveGreen);
 }
+
