@@ -36,3 +36,38 @@ body {
     margin: 0;
     background: var(--lightYellow);
 }
+
+
+/* Martin start */
+
+
+/* Sebastian start */
+
+
+
+/* Melanie start */
+
+
+
+
+
+
+
+
+
+
+
+
+/* Tab bar */
+.tab-bar-container {
+    width: 100%;
+    background-color: var(--darkGreen);
+    display: flex;
+    justify-content: center;
+}
+
+
+
+i {
+    color: var(--aliveGreen);
+}
