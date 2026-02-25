@@ -35,10 +35,74 @@ a {
 
 body {
     margin: 0;
-    background: var(--lightYellow);
+    /* background: var(--lightYellow); */
 }
 
 /* Header nav */
+
+.hero {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    color: white;
+}
+
+/* Hero video */
+.hero-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0,5)
+        rgba(255, 150, 0, 0,3)
+    ) ;
+}
+
+/* Navbar */
+.nav-img-logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.nav-img-logo img {
+    width: 70px;
+    height: auto;
+}
+
+.nav-img-logo i {
+    font-size: 28px;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 3;
+    text-align: center;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.hero-content img {
+    width: 350px;
+    margin: 20px 0;
+}
 
 
 /* Martin start */
