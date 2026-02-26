@@ -114,15 +114,76 @@ body {
 
 /* Melanie start */
 
+.mad{
+    background-color: var(--aliveGreen);
+}
+
+.mOversigtHeader{
+    background-image: url(/assets/img/mand_der_pejer.webp);
+    height: 35vh;
+    object-fit: cover;
+    background-position: center;
+}
+
+.madKonstNav {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 2rem;
+   background-color: var(--darkGreen);
+
+
+}
+   .madKonstNav p{
+        font-size: 30px;
+        color: var(--aliveGreen);
+        padding: 0rem 1rem;
+          }
+
+.madintro{
+    text-align: center;
+    margin: 0rem var(--mdSpacer);
+
+    h1{
+        margin-top: var(--smSpacer);
+    font-size: var(--smSpacer);
+    }
+}
+
+/* Styling af cards */
 
 
 
+.madcards, .drikkecards{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin: 0 auto;
+    padding: 8px;
 
+    h2{
+        margin-top: var(--smSpacer);
+        text-align: center;
+        font-size: 22px;
+    }
+}
 
-
-
-
-
+.madcard, .drinkcard{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(/assets/img/bryggen.webp);
+    height: 30vh;
+    object-fit: cover;
+    background-position: center;
+    background-size: cover;
+    padding: 0rem 2rem;
+    
+    h3{
+        font-size: 30px;
+        color: var(--lightYellow);
+        text-shadow: 2px 2px 4px black;
+    }
+}
 
 
 /* Tab bar */
