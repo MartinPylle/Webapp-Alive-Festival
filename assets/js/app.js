@@ -97,4 +97,6 @@ let cards2 = document.querySelector(".drikkecards")
     });
 
 
-    
+// Martin code
+
+// Slideshow
