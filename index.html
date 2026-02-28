@@ -7,20 +7,25 @@
 	<title>Alive Festival</title>
 	<link rel="stylesheet" href="./assets/css/style.css" />
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
-	<script src="./assets/js/app.js" defer></script>
+	<script src="./assets/js/app.js"></script>
+	<script src="/assets/js/forside.js" defer></script>
 
 </head>
 
 <body>
 	<header class="hero">
-		<video width="1920" height="1080" autoplay muted loop playsinline class="hero-video" 
+		<video width="1920" height="1080" autoplay muted loop playsinline class="hero-video">
 		<source src="./assets/img/alivefestivalintrovideo.mp4" type="video/mp4">
 		</video>
 
 	<div class="navbar">
 		<div class="nav-img-logo">
-			<img href="index.html" src="./assets/img/Alive-logo.webp" width="500px" height="500px" alt="Alive Festival logo hjemknap">
-			<i class="fa-regular fa-map"></i>
+			<a href="index.html">
+				<img src="./assets/img/Alive-logo.webp" width="500px" height="500px" alt="Alive Festival logo hjemknap">
+			</a>
+			<a href="/kortoversigt.html">
+				<i class="fa-regular fa-map"></i>
+			</a>
 		</div>
 	</div>
 		<div class="hero-content">
@@ -45,29 +50,30 @@
 		</article>
 	<!-- Slideshow -->
 	 <div class="slideshow-container">
-
+		<h2>Udforsk dig mere i Alive Festivalen</h2>
 		<div class="mySlides fade">
 			<a href="/program.html">
 				<img src="./assets/img/livekoncert.webp" style="width:100%;" alt="Live musik koncert">
 			</a>
 			<div class="text"><h2>Program</h2></div>
 		</div>
+
 		<div class="mySlides fade">
 			<a href="/madoversigt.html">
 				<img src="./assets/img/mand_der_pejer.webp" style="width:100%;" alt="Mad og drikke">
 			</a>
-			<div class="text"><h2>Mad & Drikke</h2></div>
-		</div>
+			<div class="text"><h2>Mad og Drikke</h2></div>
+			</div>
 		<div class="mySlides fade">
-			<a href="#">
+			<a href="https://alivefestival.dk/frivillig/">
 				<img src="./assets/img/bliv-frivillig.webp" style="width:100%;" alt="Blev frivillig">
 			</a>
 			<div class="text"><h2>Blev Frivillig</h2></div>
 		</div>
-
+		
 		<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
 		<a class="next" onclick="plusSlides(1)">&#10095;</a>
-	 </div>
+	</div>
 
 	 <!-- Nyhedscards -->
 	  <section class="cards">
