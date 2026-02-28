@@ -145,6 +145,11 @@ body {
     margin-bottom: var(--mdSpacer);
 }
 
+.slideshow-container h2 {
+    margin-left: 1rem;
+    margin-bottom: 0.5rem;
+}
+
 .mySlides {
     display: none;
     position: relative;
@@ -153,11 +158,17 @@ body {
 .mySlides img {
     vertical-align: middle;
     height: 40vh;
-    background: linear-gradient(rgba(0,0,0,0.8));
 }
 
 .mySlides {
     display: flex;
+}
+
+.mySlides::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(0,0,0,0.6) 0%, transparent 60%);
 }
 
 .text {
@@ -167,6 +178,7 @@ body {
     transform: translate(-50%, -50%);
     z-index: 2;
     text-align: center;
+    z-index: 3;
 }
 
 .text h2 {
