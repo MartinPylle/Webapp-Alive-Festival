@@ -7,16 +7,20 @@ let timer; // add this
 
 function showSlides() {
   let slides = document.querySelectorAll(".mySlides");
+  let dots = document.querySelectorAll(".dot");
   
   for (let i = 0; i < slides.length; i++) {
     slides[i].style.display = "none";
   }
+
+  dots.forEach(d => d.classList.remove("active"));
 
   slideIndex++;
   if (slideIndex > slides.length) { slideIndex = 1; }
   if (slideIndex < 1) {slideIndex = slides.length; }
 
   slides[slideIndex - 1].style.display = "block";
+  dots[slideIndex -1].classList.add("active");
 
   timer = setTimeout(showSlides, 10000); // store the timer
 }
@@ -24,6 +28,12 @@ function showSlides() {
 function plusSlides(n) {
   clearTimeout(timer); // cancel auto-advance
   slideIndex += n - 1;
+  showSlides();
+}
+
+function currentSlide(n) {
+  clearTimeout(timer);
+  slideIndex = n - 1;
   showSlides();
 }
 

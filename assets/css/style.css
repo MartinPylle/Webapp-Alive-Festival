@@ -208,7 +208,7 @@ body {
 }
 
 .prev:hover, .next:hover {
-    background-color: rgba(0,0,0,0.8);
+    background-color: rgba(0,0,0,1.5);
 }
 /* Fade animation  */
 .fade {
@@ -219,6 +219,34 @@ body {
 @keyframes fade {
     from {opacity: .4}
     to {opacity: 1}
+}
+
+/* dots container */
+
+.dots-container {
+    text-align: center;
+    padding: 10px 0;
+    position: absolute;
+    bottom: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 3;
+    padding: 0;
+}
+
+.dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+    background-color: var(--aliveGreen);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.dot.active {
+    background-color: var(--lightYellow);
 }
 
 /* Nyhedscards */
