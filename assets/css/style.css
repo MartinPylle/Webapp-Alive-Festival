@@ -92,7 +92,7 @@ body {
     position: relative;
     z-index: 3;
     text-align: center;
-    height: 80vh;
+    height: 75vh;
 
     display: flex;
     flex-direction: column;
@@ -102,7 +102,7 @@ body {
 }
 
 .hero-content img {
-    width: 350px;
+    width: 250px;
     margin: 20px 0;
 }
 
@@ -151,7 +151,7 @@ body {
 
 /* Navigationsknapper til slideshow */
 
-.prev.next {
+.prev, .next {
     cursor: pointer;
     position: absolute;
     top: 50%;
@@ -171,7 +171,7 @@ body {
     border-radius: 3px 0 0 3px;
 }
 
-.prev:hover.next:hover {
+.prev:hover, .next:hover {
     background-color: rgba(0,0,0,0.8);
 }
 /* Fade animation  */
@@ -183,6 +183,36 @@ body {
 @keyframes fade {
     from {opacity: .4}
     to {opacity: 1}
+}
+
+/* Nyhedscards */
+.cards {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.card img {
+    width: 100%;
+    max-width: 250px;
+    height: 35vh;
+    border-radius: 10px;
+}
+
+.card  {
+    background: var(--aliveGreen);
+    padding: 1rem;
+    display: flex;
+    align-items: start;
+    gap: 1rem;
+    margin: 1rem auto;
+}
+
+.card-info {
+    flex-grow: 1;
+}
+
+.card-info p {
+    margin-block: 0;
 }
 
 /* Sebastian start */
