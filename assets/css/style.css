@@ -114,9 +114,10 @@ body {
 
 /* Melanie start */
 
-.mad{
+.mad, .madbodIndhold{
     background-color: var(--aliveGreen);
 }
+
 
 .mOversigtHeader{
     background-image: url(/assets/img/mand_der_pejer.webp);
@@ -185,6 +186,83 @@ body {
     }
 }
 
+/* De individuelle sider */
+    /* Header */
+
+.bryggenHeader{
+    background-image: url(../img/bryggen.webp);
+    object-fit: cover;
+    height: 50vh;
+    background-position: center;
+}
+
+.feHeader{
+      background-image: url(../img/mad_groen_fe.webp);
+    object-fit: cover;
+    height: 50vh;
+    background-position: center;
+}
+
+.gastronomHeader{
+      background-image: url(../img/gadens_gastronomer.webp);
+      object-fit: cover;
+    height: 50vh;
+    background-position: center;
+}
+
+.mikunaHeader{
+ background-image: url(../img/mikuna.webp);
+    object-fit: cover;
+    height: 50vh;
+    background-position: center;
+}
+
+.salkeHeader{
+     background-image: url(../img/salke.webp);
+    object-fit: cover;
+    height: 50vh;
+    background-position: center;
+}
+
+.streetBitesHeader{
+    background-image: url(../img/streetbites_thai.webp);
+    object-fit: cover;
+    height: 50vh;
+    background-position: center;
+}
+
+.pizzaHeader{
+     background-image: url(../img/thypisk_pizza.webp);
+    object-fit: cover;
+    height: 50vh;
+    background-position: center;
+}
+
+.tacoHeader{
+     background-image: url(../img/taco.webp);
+    object-fit: cover;
+    height: 50vh;
+    background-position: center;
+}
+
+
+/* Mad Artikler */
+
+.madarticle, .madNav{
+    padding: 10px;
+
+    h1{
+        padding: var(--smSpacer) 0rem;
+    }
+
+    p{
+        margin-bottom: 10px;
+    }
+
+    h2{
+        margin: 0 auto;
+    }
+}
 
 /* Tab bar */
 .tab-bar-container {
