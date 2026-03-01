@@ -290,6 +290,67 @@ body {
     margin-top: 1rem;
 }
 
+/* Kortoversigt af Alive Festival */
+
+.navbar-kort {
+    background-color: var(--darkGreen);
+    padding: 1rem;
+}
+
+.date-kort {
+    display: flex;
+    justify-content: center;
+    border-bottom: 2px solid var(--aliveGreen);
+    padding: 0;
+}
+
+.date-kort p {
+    font-size: 20px;
+}
+
+.kortalivefestival {
+    width: 100%;
+    display: block;
+}
+
+.kortoversigt-container h2 {
+    display: flex;
+    justify-content: center;
+}
+
+/* Lokal Nav */
+.nav-kort-links ul {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    list-style: none;
+}
+
+.lokal-navbar {
+    background-color: var(--darkGreen);
+    padding: 0;
+    padding: 1rem;
+}
+.nav-kort-links a {
+    text-decoration: none;
+    color: var(--lightYellow);
+    font-size: 20px;
+}
+
+.nav-kort-links ul li {
+    float: left;
+    border-right: 2px solid var(--aliveGreen);
+}
+
+ul li:last-child {
+    border-right: none;
+}
+
+.nav-kort-links li {
+    padding-right: 10px;
+}
+
+
 /* Sebastian start */
 
 
