@@ -157,7 +157,7 @@ body {
 
 .mySlides img {
     vertical-align: middle;
-    height: 40vh;
+    height: 250px;
 }
 
 .mySlides {
@@ -263,7 +263,7 @@ body {
 .card img {
     width: 100%;
     max-width: 220px;
-    height: 35vh;
+    height: 230px;
     border-radius: 10px;
 }
 
@@ -274,6 +274,7 @@ body {
     align-items: start;
     gap: 1rem;
     margin: 1rem auto;
+    
 }
 
 .card-info {
