@@ -157,6 +157,7 @@ body {
 .mySlides img {
     vertical-align: middle;
     height: 250px;
+    width: 100%;
 }
 
 .mySlides {
