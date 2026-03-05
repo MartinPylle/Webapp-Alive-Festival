@@ -135,7 +135,6 @@ body {
 }
 
 /* Slideshow */
-
 .slideshow-container {
     max-width: 100%;
     position: relative;
@@ -186,7 +185,6 @@ body {
     text-shadow: var(--headershadow);
 }
 /* Navigationsknapper til slideshow */
-
 .prev, .next {
     cursor: pointer;
     position: absolute;
@@ -222,7 +220,6 @@ body {
 }
 
 /* dots container */
-
 .dots-container {
     text-align: center;
     padding: 10px 0;
@@ -250,7 +247,6 @@ body {
 }
 
 /* Nyhedscards */
-
 .cards h3 {
     margin: 1rem;
 }
@@ -355,7 +351,6 @@ ul li:last-child {
 
 
 /* Informations side */
-
 .navbar-info {
     padding: 1rem;
     background: var(--darkGreen);
@@ -366,16 +361,16 @@ ul li:last-child {
     max-width: 500px;
 }
 
-.accordions p span {
-    font-size: smaller;
-    
-}
 
 .header-info-text {
     display: flex;
     justify-content: center;
     text-align: center;
     margin-top: 1rem;
+}
+/* Accordions */
+.accordions p span {
+    font-size: smaller;
 }
 
 .info-text h2 + p {
