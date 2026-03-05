@@ -107,9 +107,3 @@ let cards2 = document.querySelector(".drikkecards")
         drinkArticle.appendChild(drinkTitle)
         cards2.appendChild(drinkArticle)
     });
-
-
-
-
-
-
