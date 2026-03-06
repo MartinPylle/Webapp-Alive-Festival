@@ -1,6 +1,7 @@
 // Martin code
 
 // Slideshow
+// https://www.w3schools.com/howto/howto_js_slideshow.asp
 
 let slideIndex = 0;
 let timer; // add this
@@ -97,7 +98,7 @@ const news = [
 const cardEL = document.querySelector(".cards")
 
 // loop gennem news og indsæt en article for hver nyhed
-
+// Der bruges DOM manipulation til at overskrive det eksisterende HTML 
 news.forEach(function(nyhed) {
    cardEL.innerHTML += `
    		<article class="card">
