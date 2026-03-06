@@ -12,6 +12,7 @@
     --pink: #ffb3e8;
     --moseGreen: #5c571a;
     --brown: #422d27;
+    --headershadow: 4px 4px 4px #000000cc;
 }
 
 * {
@@ -25,7 +26,7 @@
 
 p {
     font-size: 1rem;
-    color: var(--darkGreen);
+    color: var(--lightYellow);
 }
 
 a {
@@ -35,4 +36,723 @@ a {
 body {
     margin: 0;
     background: var(--lightYellow);
+}
+
+/* Navbar */
+.navbar {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    z-index: 10;
+    padding: 1rem;
+}
+
+.nav-img-logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.nav-img-logo img {
+    width: 70px;
+    height: auto;
+}
+
+.nav-img-logo i {
+    font-size: 60px;
+    color: var(--lightYellow);
+}
+
+/* Header*/
+
+.hero {
+    position: relative;
+    height: 80vh;
+    overflow: hidden;
+    color: white;
+}
+
+/* Hero video */
+.hero-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    transform: translate(-50%, -50%);
+    display: block;
+    filter: brightness(0.5);
+}
+
+/* Martin start */
+.hero-content {
+    position: relative;
+    z-index: 3;
+    text-align: center;
+    height: 75vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.hero-content img {
+    width: 250px;
+    margin: 20px 0;
+}
+
+.date p {
+    margin-top: var(--xlSpacer);
+    text-shadow: var(--headershadow);
+}
+
+.hero-content p {
+    font-style: var(--lightYellow);
+    font-size: 20px;
+    text-shadow: var(--headershadow);
+}
+
+.title-content p {
+    position: relative;
+    top: -20%;
+}
+
+/* Main */
+
+.header-meal {
+    background-color: var(--aliveGreen);
+    width: 100%;
+}
+
+.header-meal p {
+    color: var(--darkGreen);
+    padding: 0.5rem;
+}
+
+/* Slideshow */
+.slideshow-container {
+    max-width: 500px;
+    position: relative;
+    margin: auto;
+    overflow: hidden;
+    margin-top: var(--mdSpacer);
+    margin-bottom: var(--mdSpacer);
+}
+
+.slideshow-container h2 {
+    margin-left: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.mySlides {
+    display: none;
+    position: relative;
+}
+
+.mySlides img {
+    vertical-align: middle;
+    height: 250px;
+    width: 100%;
+}
+
+.mySlides {
+    display: flex;
+}
+
+.mySlides::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.6) 0%, transparent 60%);
+}
+
+.text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    text-align: center;
+    z-index: 3;
+}
+
+.text h2 {
+    color: var(--lightYellow);
+    text-shadow: var(--headershadow);
+}
+
+/* Navigationsknapper til slideshow */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: var(--lightYellow);
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    user-select: none;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 1.5);
+}
+
+/* Fade animation  */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+/* dots container */
+.dots-container {
+    text-align: center;
+    padding: 10px 0;
+    position: absolute;
+    bottom: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 3;
+    padding: 0;
+}
+
+.dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+    background-color: var(--aliveGreen);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.dot.active {
+    background-color: var(--lightYellow);
+}
+
+/* Nyhedscards */
+.cards h3 {
+    margin: 1rem;
+}
+
+.cards {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.card img {
+    width: 100%;
+    max-width: 220px;
+    height: 230px;
+    border-radius: 10px;
+}
+
+.card {
+    background: var(--aliveGreen);
+    padding: 1rem;
+    display: flex;
+    align-items: start;
+    gap: 1rem;
+    margin: 1rem auto;
+
+}
+
+.card-info {
+    flex-grow: 1;
+}
+
+.card-info p {
+    margin-block: 0;
+    color: black;
+    margin-top: 1rem;
+}
+
+.card-info h4 {
+    margin-top: 1rem;
+}
+
+/* Kortoversigt af Alive Festival */
+
+.navbar-kort {
+    background-color: var(--darkGreen);
+    padding: 1rem;
+}
+
+.date-kort {
+    display: flex;
+    justify-content: center;
+    border-bottom: 2px solid var(--aliveGreen);
+    padding: 0;
+}
+
+.date-kort p {
+    font-size: 20px;
+}
+
+.kortalivefestival {
+    width: 100%;
+    display: block;
+}
+
+.kortoversigt-container h2 {
+    display: flex;
+    justify-content: center;
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Lokal Nav */
+.nav-kort-links ul {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    list-style: none;
+}
+
+.lokal-navbar {
+    background-color: var(--darkGreen);
+    padding: 0;
+    padding: 1rem;
+}
+
+.nav-kort-links a {
+    text-decoration: none;
+    color: var(--lightYellow);
+    font-size: 20px;
+}
+
+.nav-kort-links ul li {
+    float: left;
+    border-right: 2px solid var(--aliveGreen);
+}
+
+ul li:last-child {
+    border-right: none;
+}
+
+.nav-kort-links li {
+    padding-right: 10px;
+}
+
+
+/* Informations side */
+.navbar-info {
+    padding: 1rem;
+    background: var(--darkGreen);
+}
+
+.alive-information {
+    width: 100%;
+    max-width: 500px;
+}
+
+
+.header-info-text {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+/* Accordions */
+.accordions p span {
+    font-size: smaller;
+}
+
+.info-text h2+p {
+    color: black;
+}
+
+.accordions {
+    padding: 1rem 0;
+}
+
+.accordioninfo-indhold {
+    margin-top: 1rem;
+    margin: 0.5rem 0.5rem;
+}
+
+.accordioninfo-indhold h2 {
+    margin-left: 0;
+}
+
+/* Accordions style */
+.accordions summary {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    font-weight: bold;
+    cursor: pointer;
+    list-style: none;
+    background: var(--aliveGreen);
+    padding: 1rem;
+    border-radius: 4px;
+    font-size: 20px;
+}
+
+.accordions p {
+    font-size: 18px;
+    color: black;
+}
+
+.accordions summary::-webkit-details-marker {
+    display: none;
+}
+
+.accordions summary::after {
+    content: "▾";
+    margin-left: auto;
+    font-size: 1.5rem;
+    transition: transform 0.2s ease;
+}
+
+.accordions[open] summary::after {
+    transform: rotate(180deg);
+}
+
+.accordions[open] summary {
+    margin-bottom: 0.5rem;
+}
+
+/* Sebastian start */
+
+
+
+/* Melanie start */
+
+.mad,
+.madbodIndhold {
+    background-color: var(--aliveGreen);
+}
+
+
+.mOversigtHeader {
+    background-image: url(/assets/img/mand_der_pejer.webp);
+    height: 35vh;
+    object-fit: cover;
+    background-position: center;
+}
+
+.madKonstNav {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 2rem;
+    background-color: var(--darkGreen);
+
+
+}
+
+.madKonstNav p {
+    font-size: 30px;
+    color: var(--aliveGreen);
+    padding: 0rem 1rem;
+}
+
+.madintro {
+    text-align: center;
+    margin: 0rem var(--mdSpacer);
+
+    h1 {
+        margin-top: var(--smSpacer);
+        font-size: var(--smSpacer);
+    }
+}
+
+/* Styling af cards */
+
+
+
+.madcards,
+.drikkecards {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin: 0 auto;
+    padding: 8px;
+
+    h2 {
+        margin-top: var(--smSpacer);
+        text-align: center;
+        font-size: 22px;
+    }
+}
+
+.madcard,
+.drinkcard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(/assets/img/bryggen.webp);
+    height: 30vh;
+    object-fit: cover;
+    background-position: center;
+    background-size: cover;
+    padding: 0rem 2rem;
+
+    h3 {
+        font-size: 30px;
+        color: var(--lightYellow);
+        text-shadow: 2px 2px 4px black;
+    }
+}
+
+/* De individuelle sider */
+/* Header */
+
+.bryggenHeader {
+    background-image: url(../img/bryggen.webp);
+    object-fit: cover;
+    height: 50vh;
+    background-position: center;
+}
+
+.feHeader {
+    background-image: url(../img/mad_groen_fe.webp);
+    object-fit: cover;
+    height: 50vh;
+    background-position: center;
+}
+
+.gastronomHeader {
+    background-image: url(../img/gadens_gastronomer.webp);
+    object-fit: cover;
+    height: 50vh;
+    background-position: center;
+}
+
+.mikunaHeader {
+    background-image: url(../img/mikuna.webp);
+    object-fit: cover;
+    height: 50vh;
+    background-position: center;
+}
+
+.salkeHeader {
+    background-image: url(../img/salke.webp);
+    object-fit: cover;
+    height: 50vh;
+    background-position: center;
+}
+
+.streetBitesHeader {
+    background-image: url(../img/streetbites_thai.webp);
+    object-fit: cover;
+    height: 50vh;
+    background-position: center;
+}
+
+.pizzaHeader {
+    background-image: url(../img/thypisk_pizza.webp);
+    object-fit: cover;
+    height: 50vh;
+    background-position: center;
+}
+
+.tacoHeader {
+    background-image: url(../img/taco.webp);
+    object-fit: cover;
+    height: 50vh;
+    background-position: center;
+}
+
+
+/* Mad Artikler */
+
+.madarticle,
+.madNav {
+    padding: 10px;
+
+    h1 {
+        padding: var(--smSpacer) 0rem;
+    }
+
+    p {
+        margin-bottom: 10px;
+    }
+
+    h2 {
+        margin: 0 auto;
+    }
+}
+
+/* Tab bar */
+.tab-bar-container {
+    width: 100%;
+    background-color: var(--darkGreen);
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding: 0.3rem;
+}
+
+.tab-bar-container a {
+    font-size: 35px;
+    color: var(--aliveGreen);
+}
+
+/* Sebastians CSS */
+
+/* Header på program side */
+
+.programHero {
+    position: relative;
+    overflow: hidden;
+    color: white;
+}
+
+.programHeaderImg {
+    max-height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+/* Title og snack */
+
+.programText {
+    color: var(--darkGreen);
+}
+
+.programTitle {
+    display: flex;
+    justify-content: center;
+    padding: var(--smSpacer);
+}
+
+.programSnack {
+    display: flex;
+    justify-content: center;
+    color: var(--darkGreen);
+    font-weight: bold;
+}
+
+.kunsterTitle {
+    display: flex;
+    justify-content: center;
+    padding: var(--mdSpacer) 10px 0px 10px
+}
+
+.kunsterTitle2 {
+    display: flex;
+    justify-content: center;
+    padding: var(--mdSpacer) 10px 0px 10px;
+    color: var(--darkGreen);
+}
+
+.kunsterTitle3 {
+    display: flex;
+    justify-content: center;
+    padding: var(--mdSpacer) 10px 0px 10px;
+    color: var(--darkGreen);
+}
+
+/* Artist cards til program */
+.artistCards h3 {
+    margin: 1rem;
+}
+
+.artistCards {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.artistCard img {
+    width: 100%;
+    max-width: 220px;
+    height: 230px;
+    border-radius: 10px;
+}
+
+.artistCard {
+    background: var(--aliveGreen);
+    padding: 1rem;
+    display: flex;
+    align-items: start;
+    gap: 1rem;
+    margin: 1rem auto;
+    border-radius: 5px;
+    box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.3);
+    position: relative;
+}
+
+.artistCard-Info {
+    flex-grow: 1;
+}
+
+.artistCard-Info p {
+    margin-block: 0;
+    color: black;
+    margin-top: 1rem;
+}
+
+.artistCard-Info h4 {
+    margin-top: 1rem;
+}
+
+.artistCard-Info p {
+    text-decoration: underline;
+}
+
+.artistBtn {
+    z-index: 1;
+    width: 50px;
+}
+
+.artistCard i {
+    position: absolute;
+    right: 12px;
+    top: 12px;
+    color: var(--pink);
+    text-shadow: 0px 0px 8px #000000;
+    font-size: 2rem;
+}
+
+.artistCard a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 16px;
+    top: 207px;
+    width: 234px;
+    height: 40px;
+    background-color: var(--darkGreen);
+    color: white;
+    border-radius: 5px;
+    text-decoration: underline;
+}
+
+.artistCard img {
+    object-fit: cover;
+}
+
+.cardArea {
+    padding-bottom: var(--mdSpacer);
 }
