@@ -271,7 +271,7 @@ body {
     align-items: start;
     gap: 1rem;
     margin: 1rem auto;
-    
+
 }
 
 .card-info {
@@ -331,6 +331,7 @@ body {
     padding: 0;
     padding: 1rem;
 }
+
 .nav-kort-links a {
     text-decoration: none;
     color: var(--lightYellow);
@@ -369,6 +370,7 @@ ul li:last-child {
     text-align: center;
     margin-top: 1rem;
 }
+
 /* Accordions */
 .accordions p span {
     font-size: smaller;
@@ -600,3 +602,143 @@ ul li:last-child {
     color: var(--aliveGreen);
 }
 
+/* Sebastians CSS */
+
+/* Header på program side */
+
+.programHero {
+    position: relative;
+    overflow: hidden;
+    color: white;
+}
+
+.programHeaderImg {
+    max-height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+/* Title og snack */
+
+.programText {
+    color: var(--darkGreen);
+}
+
+.programTitle {
+    display: flex;
+    justify-content: center;
+    padding: var(--smSpacer);
+}
+
+.programSnack {
+    display: flex;
+    justify-content: center;
+    color: var(--darkGreen);
+    font-weight: bold;
+}
+
+.kunsterTitle {
+    display: flex;
+    justify-content: center;
+    padding: var(--mdSpacer) 10px 0px 10px
+}
+
+.kunsterTitle2 {
+    display: flex;
+    justify-content: center;
+    padding: var(--mdSpacer) 10px 0px 10px;
+    color: var(--darkGreen);
+}
+
+.kunsterTitle3 {
+    display: flex;
+    justify-content: center;
+    padding: var(--mdSpacer) 10px 0px 10px;
+    color: var(--darkGreen);
+}
+
+/* Artist cards til program */
+.artistCards h3 {
+    margin: 1rem;
+}
+
+.artistCards {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.artistCard img {
+    width: 100%;
+    max-width: 220px;
+    height: 230px;
+    border-radius: 10px;
+}
+
+.artistCard {
+    background: var(--aliveGreen);
+    padding: 1rem;
+    display: flex;
+    align-items: start;
+    gap: 1rem;
+    margin: 1rem auto;
+    border-radius: 5px;
+    box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.3);
+    position: relative;
+}
+
+.artistCard-Info {
+    flex-grow: 1;
+}
+
+.artistCard-Info p {
+    margin-block: 0;
+    color: black;
+    margin-top: 1rem;
+}
+
+.artistCard-Info h4 {
+    margin-top: 1rem;
+}
+
+.artistCard-Info p {
+    text-decoration: underline;
+}
+
+.artistBtn {
+    z-index: 1;
+    width: 50px;
+}
+
+.artistCard i {
+    position: absolute;
+    right: 12px;
+    top: 12px;
+    color: var(--pink);
+    text-shadow: 0px 0px 8px #000000;
+    font-size: 2rem;
+}
+
+.artistCard a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 16px;
+    top: 207px;
+    width: 234px;
+    height: 40px;
+    background-color: var(--darkGreen);
+    color: white;
+    border-radius: 5px;
+    text-decoration: underline;
+}
+
+.artistCard img {
+    object-fit: cover;
+}
+
+.cardArea {
+    padding-bottom: var(--mdSpacer);
+}
