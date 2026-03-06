@@ -8,7 +8,7 @@ let timer; // add this
 function showSlides() {
   let slides = document.querySelectorAll(".mySlides");
   let dots = document.querySelectorAll(".dot");
-
+  
   for (let i = 0; i < slides.length; i++) {
     slides[i].style.display = "none";
   }
@@ -17,10 +17,10 @@ function showSlides() {
 
   slideIndex++;
   if (slideIndex > slides.length) { slideIndex = 1; }
-  if (slideIndex < 1) { slideIndex = slides.length; }
+  if (slideIndex < 1) {slideIndex = slides.length; }
 
   slides[slideIndex - 1].style.display = "block";
-  dots[slideIndex - 1].classList.add("active");
+  dots[slideIndex -1].classList.add("active");
 
   timer = setTimeout(showSlides, 10000); // store the timer
 }
@@ -59,7 +59,7 @@ const news = [
     picture: "/assets/img/døtre.webp"
   },
 
-  {
+    {
     title: {
       first: "Programændring!"
     },
@@ -75,7 +75,7 @@ const news = [
     picture: "/assets/img/wicky.webp"
   },
 
-  {
+    {
     title: {
       first: "Mad og Drikke"
     },
@@ -98,8 +98,8 @@ const cardEL = document.querySelector(".cards")
 
 // loop gennem news og indsæt en article for hver nyhed
 
-news.forEach(function (nyhed) {
-  cardEL.innerHTML += `
+news.forEach(function(nyhed) {
+   cardEL.innerHTML += `
    		<article class="card">
 			<img src="${nyhed.picture}" alt="Knustner Døtre, sceneændring til Skovscenen lørdag kl. 15:00">
 			<div class="card-info">
