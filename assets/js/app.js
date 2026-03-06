@@ -1,5 +1,3 @@
-<<<<<<< Updated upstream
-=======
 
 
 
@@ -116,4 +114,3 @@ let cards2 = document.querySelector(".drikkecards")
         link.appendChild(drinkArticle);         
         cards2.appendChild(link);    
     });
->>>>>>> Stashed changes

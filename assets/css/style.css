@@ -4,9 +4,6 @@
 
 body {
     margin: 0;
-<<<<<<< Updated upstream
-}
-=======
     background: var(--lightYellow);
 }
 
@@ -814,4 +811,3 @@ p, h1, h2, h3, h4, h5, h6, li{
     color: var(--aliveGreen);
 }
 
->>>>>>> Stashed changes
