@@ -5,8 +5,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Alive Festival</title>
+    <!-- Stylesheets -->
     <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/sebastian.css" />
+    <!-- Font Awesome stylesheet -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <!-- JavaScript reference -->
     <script src="./assets/js/app.js"></script>
     <script src="/assets/js/forside.js" defer></script>
 </head>
@@ -28,35 +32,63 @@
             </div>
 
         </div>
-        <!-- Hero content -->
-
     </header>
+    <!-- Local Nav -->
     <div class="lokal-navbar">
         <div class="nav-kort-links">
             <ul>
-                <li><a href="#kunstnereId">Kunstnere</a></li>
-                <li><a href="#udflugtId">Udflugter</a></li>
-                <li><a href="#kunstId">Kunst</a></li>
+                <li><a href="./program.html">Kunstnere</a></li>
+                <li><a href="./program.html">Udflugter</a></li>
+                <li><a href="./program.html">Kunst</a></li>
             </ul>
         </div>
     </div>
+    <!-- Main -->
     <main>
+        <!-- Default kunstner intro -->
         <section class="programText">
             <h1 class="programTitle">Program</h1>
-            <p class="programSnack">Her er oversigten over vores 2026 program!</p>
-            <h2 id="kunstnereId" class="kunsterTitle">Kunstnere</h2>
+            <p class="programSnack">Her er oversigten over Døtre!</p>
+        </section>
+        <section class="doetre">
+            <div class="doetreImgWrapper">
+                <div class="doetreImg">
+                    <img src="./assets/img/døtre.webp" alt="Et billede af kunster/kunstnerne">
+                </div>
+            </div>
+            <!-- Kunstner info -->
+            <h2>Døtre</h2>
+            <p>
+                Døtre skriver sange om alt det, de mærker.
+                De laver vokalbaseret, voluminøs, elektronisk artpop med ærlige, teatralske og til tider sarkastiske
+                tekster om alt fra mindreværd til følelsen af at fylde for meget eller være for meget.
+
+                På scenen bruger de kostumer, rekvisitter og koreografi, der gør deres performance både levende,
+                humoristisk og alvorlig. Ved at invitere publikum til refleksion og fællesskab bidrager de på deres helt
+                egen måde til kønsdebatten gennem deres unikke udtryk.
+
+                Du kan derfor forvente en kompromisløs performance, der sætter gang i hele sanseapparatet, når døtre
+                indtager scenen på årets Alive Festival.
+            </p>
+            <!-- Embed fra Spotify ved hjælp af deres "Share" funktion -->
+            <iframe data-testid="embed-iframe" style="border-radius:12px"
+                src="https://open.spotify.com/embed/track/4N2TW7govlzaF1DGmtD34T?utm_source=generator" width="100%"
+                height="200px" frameBorder="0" allowfullscreen=""
+                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                loading="lazy"></iframe>
+            <a href="program.html" class="backToArtists">Tilbage til program</a>
         </section>
 
 
     </main>
-    <!-- tab bar-->
+    <!-- Tab bar-->
     <footer>
         <div class="tab-bar-container">
+            <a href="./program.html"><i class="fa-solid fa-list"></i></a>
+            <a href="./favorit.html"><i class="fa-solid fa-heart"></i></a>
             <a href="./index.html"><i class="fa-solid fa-house"></i></a>
-            <a href="#"><i class="fa-solid fa-list"></i></a>
-            <a href="#"><i class="fa-solid fa-heart"></i></a>
             <a href="./madoversigt.html"><i class="fa-solid fa-utensils"></i></a>
-            <a href="info.html"><i class="fa-solid fa-circle-info"></i></a>
+            <a href="./info.html"><i class="fa-solid fa-circle-info"></i></a>
         </div>
     </footer>
 </body>
