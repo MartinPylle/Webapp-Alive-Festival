@@ -444,13 +444,23 @@ ul li:last-child {
 
 
 
-/* Melanie start */
+/* Melanie start - Optimeret til 550px*/
 
 .mad,
 .madbodIndhold {
     background-color: var(--aliveGreen);
 }
 
+.mad{
+    scroll-behavior: smooth;
+}
+
+.drinkIndhold, .madbodIndhold{
+
+p, h1, h2, h3, h4, h5, h6, li{
+    color: var(--darkGreen);
+}
+}
 
 .mOversigtHeader {
     background-image: url(/assets/img/mand_der_pejer.webp);
@@ -467,6 +477,11 @@ ul li:last-child {
 
 
 }
+   .madKonstNav a{
+        font-size: 30px;
+        color: var(--aliveGreen);
+        padding: 0rem 1rem;
+          }
 
 .madKonstNav p {
     font-size: 30px;
