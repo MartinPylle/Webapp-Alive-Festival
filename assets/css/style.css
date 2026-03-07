@@ -45,7 +45,7 @@ body {
     left: 0%;
     width: 100%;
     z-index: 10;
-    padding: 1rem;  
+    padding: 1rem;
 }
 
 .nav-img-logo {
@@ -141,7 +141,7 @@ body {
     margin: auto;
     overflow: hidden;
     margin-top: var(--mdSpacer);
-    margin-bottom: var(--mdSpacer);    
+    margin-bottom: var(--mdSpacer);
 }
 
 .slideshow-container h2 {
@@ -451,12 +451,6 @@ ul li:last-child {
     background-color: var(--aliveGreen);
 }
 
-.drinkIndhold, .madbodIndhold{
-
-p, h1, h2, h3, h4, h5, h6, li{
-    color: var(--darkGreen);
-}
-}
 
 .mOversigtHeader {
     background-image: url(/assets/img/mand_der_pejer.webp);
@@ -488,10 +482,6 @@ p, h1, h2, h3, h4, h5, h6, li{
         margin-top: var(--smSpacer);
         font-size: var(--smSpacer);
     }
-
-    p{
-        color: var(--darkGreen);
-    }
 }
 
 /* Styling af cards */
@@ -518,6 +508,7 @@ p, h1, h2, h3, h4, h5, h6, li{
     display: flex;
     justify-content: center;
     align-items: center;
+    background-image: url(/assets/img/bryggen.webp);
     height: 30vh;
     object-fit: cover;
     background-position: center;
@@ -531,19 +522,12 @@ p, h1, h2, h3, h4, h5, h6, li{
     }
 }
 
-/* Mad Relateret */
-
-.madRelateret{
-    justify-content: center;
-    align-items: center; 
-   
-}
 /* De individuelle sider */
 /* Header */
 
 .bryggenHeader {
     background-image: url(../img/bryggen.webp);
-    background-size: cover;
+    object-fit: cover;
     height: 50vh;
     background-position: center;
 }
@@ -578,7 +562,7 @@ p, h1, h2, h3, h4, h5, h6, li{
 
 .streetBitesHeader {
     background-image: url(../img/streetbites_thai.webp);
-    background-size: cover;
+    object-fit: cover;
     height: 50vh;
     background-position: center;
 }
@@ -597,12 +581,6 @@ p, h1, h2, h3, h4, h5, h6, li{
     background-position: center;
 }
 
-.bryghusHeader{
- background-image: url(../img/bryghus_beer.webp);
-    height: 50vh;
-    background-position: center;
-    background-size: cover;
-}
 
 /* Mad Artikler */
 
@@ -621,244 +599,6 @@ p, h1, h2, h3, h4, h5, h6, li{
     h2 {
         margin: 0 auto;
     }
-.baerbarHeader{
- background-image: url(../img/baerbar.webp);
-    background-size: cover;
-    height: 50vh;
-    background-position: center;
-}
-
-.cocktailbarHeader{
- background-image: url(../img/cocktailbar.webp);
-   background-size: cover;
-    height: 50vh;
-    background-position: center;
-}
-
-.haveHeader{
- background-image: url(../img/havebar.webp);
-    background-size: cover;
-    height: 50vh;
-    background-position: center;
-}
-.skovHeader{
- background-image: url(../img/skovbar.webp);
-    background-size: cover;
-    height: 50vh;
-    background-position: center;
-}
-
-.vadeHeader{
- background-image: url(../img/vadebar.webp);
-    background-size: cover;
-    height: 50vh;
-    background-position: center;
-}
-.vinHeader{
- background-image: url(../img/vin_whiskey_lounge.webp);
-    background-size: cover;
-    height: 50vh;
-    background-position: center;
-}
-
-/* Individuel mad nav billeder */
-
-.madRelateret_taco{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-position: center;
-    height: 20vh;
-    background-size: cover;
-    background-image: url(/assets/img/taco.webp);
-}
-
-.tab-bar-container a {
-    font-size: 35px;
-    color: var(--aliveGreen);
-}
-.madRelateret_groen{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-position: center;
-    height: 20vh;
-    background-size: cover;
-    background-image: url(/assets/img/mad_groen_fe.webp); 
-}
-
-.madRelateret_bryggen{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-position: center;
-    height: 20vh;
-    background-size: cover;
-    background-image: url(/assets/img/bryggen.webp); 
-}
-
-.madRelateret_gastronomer{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-position: center;
-    height: 20vh;
-    background-size: cover;
-    background-image: url(/assets/img/gadens_gastronomer.webp); 
-}
-
-.madRelateret_mikuna{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-position: center;
-    height: 20vh;
-    background-size: cover;
-    background-image: url(/assets/img/mikuna.webp); 
-}
-
-.madRelateret_salke{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-position: center;
-    height: 20vh;
-    background-size: cover;
-    background-image: url(/assets/img/salke.webp); 
-}
-.madRelateret_thai{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-position: center;
-    height: 20vh;
-    background-size: cover;
-    background-image: url(/assets/img/streetbites_thai.webp); 
-}
-.madRelateret_pizza{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-position: center;
-    height: 20vh;
-    background-size: cover;
-    background-image: url(/assets/img/thypisk_pizza.webp); 
-}
-
-/* Individuel drink nav billeder */
-
-.drinkRelateret_bærbar{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-position: center;
-    height: 20vh;
-    background-size: cover;
-    background-image: url(/assets/img/baerbar.webp); 
-}
-
-.drinkRelateret_vin{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-position: center;
-    height: 20vh;
-    background-size: cover;
-    background-image: url(/assets/img/vin_whiskey_lounge.webp); 
-}
-
-.drinkRelateret_bryghus{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-position: center;
-    height: 20vh;
-    background-size: cover;
-    background-image: url(/assets/img/bryghus_beer.webp); 
-}
-
-.drinkRelateret_cocktail{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-position: center;
-    height: 20vh;
-    background-size: cover;
-    background-image: url(/assets/img/cocktailbar.webp); 
-}
-
-.drinkRelateret_have{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-position: center;
-    height: 20vh;
-    background-size: cover;
-    background-image: url(/assets/img/havebar.webp); 
-}
-
-.drinkRelateret_skov{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-position: center;
-    height: 20vh;
-    background-size: cover;
-    background-image: url(/assets/img/skovbar.webp); 
-}
-
-.drinkRelateret_vade{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-position: center;
-    height: 20vh;
-    background-size: cover;
-    background-image: url(/assets/img/vadebar.webp); 
-}
-
-/* /* Overall mad nav styling */
-
-.madNav article, .drinkNav article{
-   margin-bottom: var(--smSpacer);
-    box-shadow:  4px 4px 8px 4px rgba(0, 0, 0, 0.2);
-}
-
-.madNav article h3, .drinkNav article h3{
-    font-size: 30px;
-        color: var(--lightYellow);
-        text-shadow: 2px 2px 4px black;
-   
-}
-
-
-/* Mad Artikler */
-.madNav{
-    padding: 10px;
-}
-
-.madarticle, .drinkarticle{
-    padding: 10px;
-   
-
-    h1{
-        padding: var(--smSpacer) 0rem;
-    }
-
-    p, ul{
-        margin-bottom: 15px;
-    }
-
-    h2{
-        margin: 0 auto;
-        padding: 10px;
-    }
-
-    h3{
-        margin-top: 10px;
-    }
-
-   
 }
 
 /* Tab bar */
@@ -875,4 +615,3 @@ p, h1, h2, h3, h4, h5, h6, li{
     font-size: 35px;
     color: var(--aliveGreen);
 }
-
