@@ -435,10 +435,14 @@ ul li:last-child {
 
 
 
-/* Melanie start */
+/* Melanie start - Optimeret til 550px*/
 
 .mad, .madbodIndhold{
     background-color: var(--aliveGreen);
+}
+
+.mad{
+    scroll-behavior: smooth;
 }
 
 .drinkIndhold, .madbodIndhold{
@@ -463,7 +467,7 @@ p, h1, h2, h3, h4, h5, h6, li{
 
 
 }
-   .madKonstNav p{
+   .madKonstNav a{
         font-size: 30px;
         color: var(--aliveGreen);
         padding: 0rem 1rem;
