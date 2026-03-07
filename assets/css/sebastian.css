@@ -1,7 +1,7 @@
 /* Ikke optimalt at have individuelle CSS dokumenter men vi havde problemer med at der var blevet kodet på Sebastian branch af andre medlemmer ved uheld. */
 /* Dette gjorde at vi fik ekstremt mange merge errors */
 /* Derfor har vi valgt at lave et seperat dokument til mig (Sebastian) */
-
+/* Alle vores sider er optimeret til 550px selvom det nok burde være lavere */
 /* Variables */
 :root {
     --smSpacer: 25px;
@@ -239,4 +239,5 @@ body {
     justify-content: center;
     margin: 0 auto var(--mdSpacer) auto;
     box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.3);
+
 }
