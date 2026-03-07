@@ -1,0 +1,242 @@
+/* Ikke optimalt at have individuelle CSS dokumenter men vi havde problemer med at der var blevet kodet på Sebastian branch af andre medlemmer ved uheld. */
+/* Dette gjorde at vi fik ekstremt mange merge errors */
+/* Derfor har vi valgt at lave et seperat dokument til mig (Sebastian) */
+
+/* Variables */
+:root {
+    --smSpacer: 25px;
+    --mdSpacer: 50px;
+    --xlSpacer: 75px;
+
+    --darkGreen: #2e4428;
+    --aliveGreen: #d7ffc2;
+    --lightYellow: #ffffdf;
+    --pink: #ffb3e8;
+    --moseGreen: #5c571a;
+    --brown: #422d27;
+    --headershadow: 4px 4px 4px #000000cc;
+}
+
+/* General styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    line-height: 150%;
+    scroll-behavior: smooth;
+}
+
+/* Tekst (p) farve og størrelse */
+p {
+    font-size: 1rem;
+    color: var(--lightYellow);
+}
+
+/* Fjerner dekoration på links */
+a {
+    text-decoration: none;
+}
+
+/* Fjerner margin på body og give baggrund */
+body {
+    margin: 0;
+    background: var(--lightYellow);
+}
+
+/* Sebastians CSS */
+
+/* Header på program side */
+
+.programHero {
+    position: relative;
+    overflow: hidden;
+    color: white;
+}
+
+.programHeaderImg {
+    max-height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+/* Title og snack */
+/* Ændrede tekstfarve da baggrundsfarve var samme farve som default styling til <P>.*/
+/* Det komme jeg til at rette en del længere nede også. */
+.programText {
+    color: var(--darkGreen);
+}
+
+.programTitle {
+    display: flex;
+    justify-content: center;
+    padding: var(--smSpacer);
+}
+
+.programSnack {
+    display: flex;
+    justify-content: center;
+    color: var(--darkGreen);
+    font-weight: bold;
+}
+
+.kunsterTitle {
+    display: flex;
+    justify-content: center;
+    padding: var(--mdSpacer) 10px 0px 10px
+}
+
+.kunsterTitle2 {
+    display: flex;
+    justify-content: center;
+    padding: var(--mdSpacer) 10px 0px 10px;
+    color: var(--darkGreen);
+}
+
+.kunsterTitle3 {
+    display: flex;
+    justify-content: center;
+    padding: var(--mdSpacer) 10px 0px 10px;
+    color: var(--darkGreen);
+}
+
+/* Artist cards til program */
+.artistCards h3 {
+    margin: 1rem;
+}
+
+.artistCards {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.artistCard img {
+    width: 100%;
+    max-width: 220px;
+    height: 230px;
+    border-radius: 10px;
+}
+
+/* Styling af selve kort containeren */
+.artistCard {
+    background: var(--aliveGreen);
+    padding: 1rem;
+    display: flex;
+    align-items: start;
+    gap: 1rem;
+    margin: 1rem auto;
+    border-radius: 5px;
+    box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.3);
+    position: relative;
+}
+
+.artistCard-Info {
+    flex-grow: 1;
+}
+
+.artistCard-Info p {
+    margin-block: 0;
+    color: black;
+    margin-top: 1rem;
+}
+
+.artistCard-Info h4 {
+    margin-top: 1rem;
+}
+
+.artistCard-Info p {
+    text-decoration: underline;
+}
+
+.artistBtn {
+    z-index: 1;
+    width: 50px;
+}
+
+/* Styling af SVG hjertet fra Font Awesome i artistCard */
+.artistCard i {
+    position: absolute;
+    right: 12px;
+    top: 12px;
+    color: var(--pink);
+    text-shadow: 0px 0px 8px #000000;
+    font-size: 2rem;
+}
+
+/* Brugte en <a> til at lave en button, jeg mener vi har lært <button> men jeg har en bedre forståelse af <a> */
+.artistCard a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 16px;
+    top: 207px;
+    width: 234px;
+    height: 40px;
+    background-color: var(--darkGreen);
+    color: var(--lightYellow);
+    border-radius: 5px;
+    text-decoration: underline;
+}
+
+.artistCard img {
+    object-fit: cover;
+}
+
+.cardArea {
+    padding-bottom: var(--mdSpacer);
+}
+
+/* Artist biografi side */
+
+.doetre {
+    max-width: 500px;
+    margin: auto;
+
+    img {
+        max-width: 500px;
+    }
+
+    h2 {
+        text-align: center;
+        padding: var(--smSpacer);
+        font-size: 2rem;
+        color: var(--darkGreen);
+    }
+
+    p {
+        color: var(--darkGreen);
+        padding-bottom: var(--mdSpacer);
+    }
+
+}
+
+.doetreImgWrapper {
+    margin-top: var(--mdSpacer);
+    max-height: 500px;
+    overflow: hidden;
+    border-radius: 5px;
+    box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.3);
+}
+
+/* Knappen i bunden af siden der tager brugeren til program.html */
+
+.doetre a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 234px;
+    height: 40px;
+    background-color: var(--darkGreen);
+    color: var(--lightYellow);
+    border-radius: 5px;
+    text-decoration: underline;
+}
+
+.backToArtists {
+    justify-content: center;
+    margin: 0 auto var(--mdSpacer) auto;
+    box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.3);
+}

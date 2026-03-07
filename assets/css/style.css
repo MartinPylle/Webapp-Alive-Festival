@@ -136,7 +136,7 @@ body {
 
 /* Slideshow */
 .slideshow-container {
-    max-width: 100%;
+    max-width: 500px;
     position: relative;
     margin: auto;
     overflow: hidden;
@@ -168,7 +168,7 @@ body {
     content: '';
     position: absolute;
     inset: 0;
-    background: linear-gradient(to top, rgba(0,0,0,0.6) 0%, transparent 60%);
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.6) 0%, transparent 60%);
 }
 
 .text {
@@ -185,8 +185,10 @@ body {
     color: var(--lightYellow);
     text-shadow: var(--headershadow);
 }
+
 /* Navigationsknapper til slideshow */
-.prev, .next {
+.prev,
+.next {
     cursor: pointer;
     position: absolute;
     top: 50%;
@@ -198,7 +200,7 @@ body {
     font-size: 18px;
     transition: 0.6s ease;
     user-select: none;
-    background-color: rgba(0,0,0,0.3);
+    background-color: rgba(0, 0, 0, 0.3);
 }
 
 .next {
@@ -206,9 +208,11 @@ body {
     border-radius: 3px 0 0 3px;
 }
 
-.prev:hover, .next:hover {
-    background-color: rgba(0,0,0,1.5);
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 1.5);
 }
+
 /* Fade animation  */
 .fade {
     animation-name: fade;
@@ -216,8 +220,13 @@ body {
 }
 
 @keyframes fade {
-    from {opacity: .4}
-    to {opacity: 1}
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
 }
 
 /* dots container */
@@ -376,7 +385,7 @@ ul li:last-child {
     font-size: smaller;
 }
 
-.info-text h2 + p {
+.info-text h2+p {
     color: black;
 }
 
@@ -437,7 +446,8 @@ ul li:last-child {
 
 /* Melanie start */
 
-.mad, .madbodIndhold{
+.mad,
+.madbodIndhold {
     background-color: var(--aliveGreen);
 }
 
@@ -448,7 +458,7 @@ p, h1, h2, h3, h4, h5, h6, li{
 }
 }
 
-.mOversigtHeader{
+.mOversigtHeader {
     background-image: url(/assets/img/mand_der_pejer.webp);
     height: 35vh;
     object-fit: cover;
@@ -459,23 +469,24 @@ p, h1, h2, h3, h4, h5, h6, li{
     display: flex;
     justify-content: space-evenly;
     gap: 2rem;
-   background-color: var(--darkGreen);
+    background-color: var(--darkGreen);
 
 
 }
-   .madKonstNav p{
-        font-size: 30px;
-        color: var(--aliveGreen);
-        padding: 0rem 1rem;
-          }
 
-.madintro{
+.madKonstNav p {
+    font-size: 30px;
+    color: var(--aliveGreen);
+    padding: 0rem 1rem;
+}
+
+.madintro {
     text-align: center;
     margin: 0rem var(--mdSpacer);
 
-    h1{
+    h1 {
         margin-top: var(--smSpacer);
-    font-size: var(--smSpacer);
+        font-size: var(--smSpacer);
     }
 
     p{
@@ -487,23 +498,23 @@ p, h1, h2, h3, h4, h5, h6, li{
 
 
 
-.madcards, .drikkecards{
+.madcards,
+.drikkecards {
     display: flex;
     flex-direction: column;
     gap: 1rem;
     margin: 0 auto;
     padding: 8px;
 
-    h2{
+    h2 {
         margin-top: var(--smSpacer);
         text-align: center;
         font-size: 22px;
     }
 }
 
-
-
-.madcard, .drinkcard{
+.madcard,
+.drinkcard {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -512,8 +523,8 @@ p, h1, h2, h3, h4, h5, h6, li{
     background-position: center;
     background-size: cover;
     padding: 0rem 2rem;
-    
-    h3{
+
+    h3 {
         font-size: 30px;
         color: var(--lightYellow);
         text-shadow: 2px 2px 4px black;
@@ -528,60 +539,60 @@ p, h1, h2, h3, h4, h5, h6, li{
    
 }
 /* De individuelle sider */
-    /* Header */
+/* Header */
 
-.bryggenHeader{
+.bryggenHeader {
     background-image: url(../img/bryggen.webp);
     background-size: cover;
     height: 50vh;
     background-position: center;
 }
 
-.feHeader{
-      background-image: url(../img/mad_groen_fe.webp);
-    background-size: cover;
+.feHeader {
+    background-image: url(../img/mad_groen_fe.webp);
+    object-fit: cover;
     height: 50vh;
     background-position: center;
 }
 
-.gastronomHeader{
-      background-image: url(../img/gadens_gastronomer.webp);
-      background-size: cover;
+.gastronomHeader {
+    background-image: url(../img/gadens_gastronomer.webp);
+    object-fit: cover;
     height: 50vh;
     background-position: center;
 }
 
-.mikunaHeader{
- background-image: url(../img/mikuna.webp);
-    background-size: cover;
+.mikunaHeader {
+    background-image: url(../img/mikuna.webp);
+    object-fit: cover;
     height: 50vh;
     background-position: center;
 }
 
-.salkeHeader{
-     background-image: url(../img/salke.webp);
-    background-size: cover;
+.salkeHeader {
+    background-image: url(../img/salke.webp);
+    object-fit: cover;
     height: 50vh;
     background-position: center;
 }
 
-.streetBitesHeader{
+.streetBitesHeader {
     background-image: url(../img/streetbites_thai.webp);
     background-size: cover;
     height: 50vh;
     background-position: center;
 }
 
-.pizzaHeader{
-     background-image: url(../img/thypisk_pizza.webp);
-    background-size: cover;
+.pizzaHeader {
+    background-image: url(../img/thypisk_pizza.webp);
+    object-fit: cover;
     height: 50vh;
     background-position: center;
 }
 
-.tacoHeader{
-     background-image: url(../img/taco.webp);
-    background-size: cover;
+.tacoHeader {
+    background-image: url(../img/taco.webp);
+    object-fit: cover;
     height: 50vh;
     background-position: center;
 }
@@ -593,6 +604,23 @@ p, h1, h2, h3, h4, h5, h6, li{
     background-size: cover;
 }
 
+/* Mad Artikler */
+
+.madarticle,
+.madNav {
+    padding: 10px;
+
+    h1 {
+        padding: var(--smSpacer) 0rem;
+    }
+
+    p {
+        margin-bottom: 10px;
+    }
+
+    h2 {
+        margin: 0 auto;
+    }
 .baerbarHeader{
  background-image: url(../img/baerbar.webp);
     background-size: cover;
@@ -645,6 +673,10 @@ p, h1, h2, h3, h4, h5, h6, li{
     background-image: url(/assets/img/taco.webp);
 }
 
+.tab-bar-container a {
+    font-size: 35px;
+    color: var(--aliveGreen);
+}
 .madRelateret_groen{
     display: flex;
     justify-content: center;
