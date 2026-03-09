@@ -8,7 +8,7 @@
 	<link rel="stylesheet" href="./assets/css/style.css" />
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
 	<script src="./assets/js/app.js"></script>
-	<script src="/assets/js/forside.js" defer></script>
+	<script src="./assets/js/forside.js" defer></script>
 
 </head>
 
@@ -19,8 +19,8 @@
                 <a href="index.html">
                     <img src="./assets/img/Alive-logo.webp" width="500px" height="500px" alt="Alive Festival logo hjemknap">
                 </a>
-                <a href="/kortoversigt.html">
-                    <i class="fa-regular fa-map"></i>
+                <a href="kortoversigt.html">
+                    <i class="fa-regular fa-map"><p>Kort</p></i>
                 </a>
             </div>
             <div class="date-kort">
@@ -37,7 +37,7 @@
             </div>
         </div>
         <section class="accordioninfo-indhold">
-            <h2>Alive Festival</h2>
+            <div class="info-title"><h2>Alive Festival</h2></div>
             <details class="accordions">
                 <summary>Læs hvordan man kommer ind til festivalpladsen</summary>
                 <p>Festivalpladens adresse er:</p>
@@ -84,12 +84,18 @@
                 <p>Campingområdet vil døgnet rundt være under opsyn af serviceværter.</p>
             </details>
             <details class="accordions">
-                <summary>TITLE</summary>
-                <p>TEKST</p>
+                <summary>Læs ordensreglement</summary>
+                <p>Adgang til campingområdet kræver camping armbånd eller gyldigt ærinde</p>
+                <br>
+                <p>Campingvogne og pavilloner er ikke tilladt</p>
+                <br>
+                <p>Hunde eller dyr må ikke medbringes på campingområdet</p>
             </details>
             <details class="accordions">
-                <summary>Grill og Trangia</summary>
-                <p>TEKST</p>
+                <summary>Læs reglerne om grill og trangia</summary>
+                <p>1. Grill og trangiasæt må kun anvendes på dertil indrettede områder. følg skiltningen på campingpladsen</p>
+                <p>2. Ved anvendelse af grill eller trangiasæt skal der udvises forsigtighed.</p>
+                <p>3. Der må også gerne anvendes kulgrill (f.eks. engangsgrill).</p>
             </details>
 
             <h2>Billet Information</h2>
@@ -113,13 +119,13 @@
     </main>
 
     	<!-- tab bar-->
-	<footer>
-		<div class="tab-bar-container">
-			<a href="./index.html"><i class="fa-solid fa-house"></i></a>
-			<a href="#"><i class="fa-solid fa-list"></i></a>
-			<a href="#"><i class="fa-solid fa-heart"></i></a>
-			<a href="./madoversigt.html"><i class="fa-solid fa-utensils"></i></a>
-			<a href="#"><i class="fa-solid fa-circle-info"></i></a>
+    <footer>
+			<div class="tab-bar-container">
+			<a href="./program.html"><i class="fa-solid fa-list"><p>Program</p></i></a>
+			<a href="./favorit.html"><i class="fa-solid fa-heart"><p>Favorit</p></i></a>
+			<a href="./index.html"><i class="fa-solid fa-house"><p>Hjem</p></i></a>
+			<a href="./madoversigt.html"><i class="fa-solid fa-utensils"><p>Mad Og Drikke</p></i></a>
+			<a href="./info.html"><i class="fa-solid fa-circle-info"><p>Info</p></i></a>
 		</div>
 	</footer>
 </body>

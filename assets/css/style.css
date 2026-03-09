@@ -38,6 +38,10 @@ body {
     background: var(--lightYellow);
 }
 
+main {
+    margin-bottom: 8rem;
+}
+
 /* Navbar */
 .navbar {
     position: absolute;
@@ -65,6 +69,8 @@ body {
     color: var(--lightYellow);
 }
 
+/* Martin start */
+
 /* Header*/
 
 .hero {
@@ -87,7 +93,6 @@ body {
     filter: brightness(0.5);
 }
 
-/* Martin start */
 .hero-content {
     position: relative;
     z-index: 3;
@@ -163,16 +168,19 @@ body {
     vertical-align: middle;
     height: 250px;
     width: 100%;
-}
-
-.mySlides {
-    display: flex;
+    object-fit: cover;
 }
 
 .mySlides::after {
     content: '';
     position: absolute;
     inset: 0;
+    /* Opretter en gradient-overlay der går fra mørk til gennemsigtig.
+   Farven starter med sort (60% opacity) i bunden og bliver gradvist
+   gennemsigtig mod toppen. Dette gør teksten ovenpå billedet lettere at læse.  */
+    background: linear-gradient(to top, rgba(0,0,0,0.6) 0%, transparent 60%);
+    /* gør at det er hele billedet der er klikbart */
+    pointer-events: none;
     background: linear-gradient(to top, rgba(0, 0, 0, 0.6) 0%, transparent 60%);
 }
 
@@ -251,14 +259,14 @@ body {
     width: 10px;
     height: 10px;
     margin: 0 5px;
-    background-color: var(--aliveGreen);
+    background-color: white;
     border-radius: 50%;
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
 
 .dot.active {
-    background-color: var(--lightYellow);
+    background-color: black;
 }
 
 /* Nyhedscards */
@@ -276,6 +284,7 @@ body {
     max-width: 220px;
     height: 230px;
     border-radius: 10px;
+    object-fit: cover;
 }
 
 .card {
@@ -285,7 +294,7 @@ body {
     align-items: start;
     gap: 1rem;
     margin: 1rem auto;
-
+    border-radius: 5px;
 }
 
 .card-info {
@@ -325,6 +334,10 @@ body {
     display: block;
 }
 
+.kortoversigt-container {
+    max-width: 550px;
+}
+
 .kortoversigt-container h2 {
     display: flex;
     justify-content: center;
@@ -349,7 +362,7 @@ body {
 .nav-kort-links a {
     text-decoration: none;
     color: var(--lightYellow);
-    font-size: 20px;
+    font-size: 25px;
 }
 
 .nav-kort-links ul li {
@@ -383,6 +396,22 @@ ul li:last-child {
     justify-content: center;
     text-align: center;
     margin-top: 1rem;
+    color: var(--darkGreen);
+}
+
+.alive-information {
+    max-width: 550px;
+}
+
+.info-title h2 {
+    margin-top: 5rem;
+    
+}
+
+.info-text p {
+    font-size: 18px;
+    margin: 1.5rem;
+    color: var(--darkGreen);
 }
 
 /* Accordions */
@@ -401,7 +430,7 @@ ul li:last-child {
 
 .accordioninfo-indhold {
     margin-top: 1rem;
-    margin: 0.5rem 0.5rem;
+    margin: 1.5rem;
 }
 
 .accordioninfo-indhold h2 {
@@ -469,7 +498,7 @@ p, h1, h2, h3, h4, h5, h6, li{
 }
 
 .mOversigtHeader {
-    background-image: url(/assets/img/mand_der_pejer.webp);
+    background-image: url(./assets/img/mand_der_pejer.webp);
     height: 35vh;
     object-fit: cover;
     background-position: center;
@@ -532,7 +561,7 @@ p, h1, h2, h3, h4, h5, h6, li{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url(/assets/img/bryggen.webp);
+    background-image: url(./assets/img/bryggen.webp);
     height: 30vh;
     object-fit: cover;
     background-position: center;
@@ -631,11 +660,22 @@ p, h1, h2, h3, h4, h5, h6, li{
     background-color: var(--darkGreen);
     display: flex;
     justify-content: center;
-    gap: 2rem;
-    padding: 0.3rem;
+    gap: 2.5rem;
+    padding: 0.5rem 0 0.5rem;
+    padding-bottom: 5px;
+
+    position: fixed;
+    bottom: 0;
+    z-index: 2;
 }
 
 .tab-bar-container a {
-    font-size: 35px;
+    font-size: 40px;
     color: var(--aliveGreen);
+    margin-top: 0.3rem;
+}
+
+.tab-bar-container a p {
+    font-size: 10px;
+    margin-top: 0.2rem;
 }

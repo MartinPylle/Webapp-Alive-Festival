@@ -12,8 +12,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
     <!-- JavaScript reference -->
     <script src="./assets/js/app.js"></script>
-    <script src="/assets/js/forside.js" defer></script>
-    <script src="/assets/js/favorit.js" defer></script>
+    <script src="./assets/js/forside.js" defer></script>
+    <script src="./assets/js/favorit.js" defer></script>
 
 </head>
 
@@ -23,15 +23,14 @@
         <img class="programHeaderImg" src=".//assets/img/livekoncert.webp" alt="Et billede af en live koncert.">
 
         <div class="navbar">
-            <div class="nav-img-logo">
-                <a href="index.html">
-                    <img src="./assets/img/Alive-logo.webp" width="500px" height="500px"
-                        alt="Alive Festival logo hjemknap">
-                </a>
-                <a href="/kortoversigt.html">
-                    <i class="fa-regular fa-map"></i>
-                </a>
-            </div>
+		<div class="nav-img-logo">
+			<a href="index.html">
+				<img src="./assets/img/Alive-logo.webp" width="500px" height="500px" alt="Alive Festival logo hjemknap">
+			</a>
+			<a href="kortoversigt.html">
+				<i class="fa-regular fa-map"><p>Kort</p></i>
+			</a>
+		</div>
 
         </div>
 
@@ -50,8 +49,8 @@
     <main>
         <!-- Cards med ens favorit kunstnere -->
         <section class="programText">
-            <h1 class="programTitle">Program</h1>
-            <p class="programSnack">Her er oversigten over vores 2026 program!</p>
+            <h1 class="programTitle">Favoritter</h1>
+            <p class="programSnack">Her er oversigten over dine favoritter</p>
             <h2 id="kunstnereId" class="kunsterTitle">Kunstnere</h2>
         </section>
         <section class="cardArea">
@@ -213,15 +212,15 @@
 
     </main>
     <!-- tab bar-->
-    <footer>
-        <div class="tab-bar-container">
-            <a href="./program.html"><i class="fa-solid fa-list"></i></a>
-            <a href="./favorit.html"><i class="fa-solid fa-heart"></i></a>
-            <a href="./index.html"><i class="fa-solid fa-house"></i></a>
-            <a href="./madoversigt.html"><i class="fa-solid fa-utensils"></i></a>
-            <a href="./info.html"><i class="fa-solid fa-circle-info"></i></a>
-        </div>
-    </footer>
+<footer>
+			<div class="tab-bar-container">
+			<a href="./program.html"><i class="fa-solid fa-list"><p>Program</p></i></a>
+			<a href="./favorit.html"><i class="fa-solid fa-heart"><p>Favorit</p></i></a>
+			<a href="./index.html"><i class="fa-solid fa-house"><p>Hjem</p></i></a>
+			<a href="./madoversigt.html"><i class="fa-solid fa-utensils"><p>Mad Og Drikke</p></i></a>
+			<a href="./info.html"><i class="fa-solid fa-circle-info"><p>Info</p></i></a>
+		</div>
+	</footer>
 </body>
 
 </html>
