@@ -16,6 +16,7 @@ function showSlides() {
   let dots = document.querySelectorAll(".dot");
   
   // loop der skjuler alle slides
+
   for (let i = 0; i < slides.length; i++) {
     slides[i].style.display = "none";
   }
@@ -28,12 +29,15 @@ function showSlides() {
   if (slideIndex > slides.length) { slideIndex = 1; }
   // Hvis slideIndex er mindre end 1, vis sidste slide
   if (slideIndex < 1) {slideIndex = slides.length; }
+  if (slideIndex < 1) { slideIndex = slides.length; }
 
   // Viser den aktuelle slide
   slides[slideIndex - 1].style.display = "block";
   // Marker den tilhørende dot som aktiv
   dots[slideIndex -1].classList.add("active");
   // starter automatisk slideshow igen efter 10 sekunder 
+  dots[slideIndex - 1].classList.add("active");
+
   timer = setTimeout(showSlides, 10000); // store the timer
 }
 
@@ -81,7 +85,7 @@ const news = [
     picture: "/assets/img/døtre.webp"
   },
 
-    {
+  {
     title: {
       first: "Programændring!"
     },
@@ -97,7 +101,7 @@ const news = [
     picture: "/assets/img/wicky.webp"
   },
 
-    {
+  {
     title: {
       first: "Mad og Drikke"
     },
