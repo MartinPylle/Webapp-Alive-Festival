@@ -38,6 +38,10 @@ body {
     background: var(--lightYellow);
 }
 
+main {
+    margin-bottom: 8rem;
+}
+
 /* Navbar */
 .navbar {
     position: absolute;
