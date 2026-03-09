@@ -38,6 +38,10 @@ body {
     background: var(--lightYellow);
 }
 
+main {
+    margin-bottom: 8rem;
+}
+
 /* Navbar */
 .navbar {
     position: absolute;
@@ -647,6 +651,9 @@ p, h1, h2, h3, h4, h5, h6, li{
     gap: 2.5rem;
     padding: 0.5rem 0 0.5rem;
     padding-bottom: 5px;
+    position: fixed;
+    bottom: 0;
+    z-index: 2;
 }
 
 .tab-bar-container a {
