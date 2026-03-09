@@ -492,7 +492,7 @@ p, h1, h2, h3, h4, h5, h6, li{
 }
 
 .mOversigtHeader {
-    background-image: url(/assets/img/mand_der_pejer.webp);
+    background-image: url(./assets/img/mand_der_pejer.webp);
     height: 35vh;
     object-fit: cover;
     background-position: center;
@@ -552,7 +552,7 @@ p, h1, h2, h3, h4, h5, h6, li{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url(/assets/img/bryggen.webp);
+    background-image: url(./assets/img/bryggen.webp);
     height: 30vh;
     object-fit: cover;
     background-position: center;
