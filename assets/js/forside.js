@@ -82,7 +82,7 @@ const news = [
     date: {
       weekday: "Lørdag kl. 15:00"
     },
-    picture: "/assets/img/døtre.webp"
+    picture: "./assets/img/døtre.webp"
   },
 
   {
@@ -98,7 +98,7 @@ const news = [
     date: {
       weekday: "Fredag kl. 21:30"
     },
-    picture: "/assets/img/wicky.webp"
+    picture: "./assets/img/wicky.webp"
   },
 
   {
@@ -114,7 +114,7 @@ const news = [
     date: {
       weekday: ""
     },
-    picture: "/assets/img/thypisk_pizza.webp"
+    picture: "./assets/img/thypisk_pizza.webp"
   },
 ];
 
