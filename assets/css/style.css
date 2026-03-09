@@ -139,6 +139,11 @@ main {
     padding: 0.5rem;
 }
 
+.header-meal h1{
+    color: var(--darkGreen);
+    padding: 0.5rem;
+}
+
 /* Slideshow */
 .slideshow-container {
     max-width: 500px;
@@ -422,6 +427,7 @@ ul li:last-child {
     padding: 1rem 0;
 }
 
+
 .accordioninfo-indhold {
     margin-top: 1rem;
     margin: 1.5rem;
@@ -445,7 +451,7 @@ ul li:last-child {
     font-size: 20px;
 }
 
-.accordions p {
+.accordions p, .accordians h3 {
     font-size: 18px;
     color: black;
 }
@@ -504,7 +510,6 @@ p, h1, h2, h3, h4, h5, h6, li{
     gap: 2rem;
     background-color: var(--darkGreen);
 
-
 }
    .madKonstNav a{
         font-size: 30px;
@@ -525,6 +530,10 @@ p, h1, h2, h3, h4, h5, h6, li{
     h1 {
         margin-top: var(--smSpacer);
         font-size: var(--smSpacer);
+    }
+
+    p{
+        color: var(--darkGreen);
     }
 }
 
