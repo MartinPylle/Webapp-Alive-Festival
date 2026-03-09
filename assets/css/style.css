@@ -391,6 +391,7 @@ ul li:last-child {
     justify-content: center;
     text-align: center;
     margin-top: 1rem;
+    color: var(--darkGreen);
 }
 
 .alive-information {
@@ -399,11 +400,13 @@ ul li:last-child {
 
 .info-title h2 {
     margin-top: 5rem;
+    color: var(--darkGreen);
 }
 
 .info-text p {
     font-size: 18px;
     margin: 1.5rem;
+    color: var(--darkGreen);
 }
 
 /* Accordions */
@@ -651,7 +654,7 @@ p, h1, h2, h3, h4, h5, h6, li{
     gap: 2.5rem;
     padding: 0.5rem 0 0.5rem;
     padding-bottom: 5px;
-    
+
     position: fixed;
     bottom: 0;
     z-index: 2;
