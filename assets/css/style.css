@@ -498,7 +498,7 @@ p, h1, h2, h3, h4, h5, h6, li{
 }
 
 .mOversigtHeader {
-    background-image: url(./assets/img/mand_der_pejer.webp);
+    background-image: url(../img/mand_der_pejer.webp);
     height: 35vh;
     object-fit: cover;
     background-position: center;
