@@ -561,7 +561,6 @@ p, h1, h2, h3, h4, h5, h6, li{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url(./assets/img/bryggen.webp);
     height: 30vh;
     object-fit: cover;
     background-position: center;
@@ -691,7 +690,7 @@ p, h1, h2, h3, h4, h5, h6, li{
     background-position: center;
     height: 20vh;
     background-size: cover;
-    background-image: url(/assets/img/taco.webp);
+    background-image: url(../assets/img/taco.webp);
 }
 
 .madRelateret_groen{
@@ -701,7 +700,7 @@ p, h1, h2, h3, h4, h5, h6, li{
     background-position: center;
     height: 20vh;
     background-size: cover;
-    background-image: url(/assets/img/mad_groen_fe.webp); 
+    background-image: url(../assets/img/mad_groen_fe.webp); 
 }
 
 .madRelateret_bryggen{
@@ -711,7 +710,7 @@ p, h1, h2, h3, h4, h5, h6, li{
     background-position: center;
     height: 20vh;
     background-size: cover;
-    background-image: url(/assets/img/bryggen.webp); 
+    background-image: url(../assets/img/bryggen.webp); 
 }
 
 .madRelateret_gastronomer{
@@ -721,7 +720,7 @@ p, h1, h2, h3, h4, h5, h6, li{
     background-position: center;
     height: 20vh;
     background-size: cover;
-    background-image: url(/assets/img/gadens_gastronomer.webp); 
+    background-image: url(../assets/img/gadens_gastronomer.webp); 
 }
 
 .madRelateret_mikuna{
@@ -731,7 +730,7 @@ p, h1, h2, h3, h4, h5, h6, li{
     background-position: center;
     height: 20vh;
     background-size: cover;
-    background-image: url(/assets/img/mikuna.webp); 
+    background-image: url(../assets/img/mikuna.webp); 
 }
 
 .madRelateret_salke{
@@ -741,7 +740,7 @@ p, h1, h2, h3, h4, h5, h6, li{
     background-position: center;
     height: 20vh;
     background-size: cover;
-    background-image: url(/assets/img/salke.webp); 
+    background-image: url(../assets/img/salke.webp); 
 }
 .madRelateret_thai{
     display: flex;
@@ -750,7 +749,7 @@ p, h1, h2, h3, h4, h5, h6, li{
     background-position: center;
     height: 20vh;
     background-size: cover;
-    background-image: url(/assets/img/streetbites_thai.webp); 
+    background-image: url(../assets/img/streetbites_thai.webp); 
 }
 .madRelateret_pizza{
     display: flex;
@@ -759,7 +758,7 @@ p, h1, h2, h3, h4, h5, h6, li{
     background-position: center;
     height: 20vh;
     background-size: cover;
-    background-image: url(/assets/img/thypisk_pizza.webp); 
+    background-image: url(../assets/img/thypisk_pizza.webp); 
 }
 
 /* Individuel drink nav billeder */
@@ -771,7 +770,7 @@ p, h1, h2, h3, h4, h5, h6, li{
     background-position: center;
     height: 20vh;
     background-size: cover;
-    background-image: url(/assets/img/baerbar.webp); 
+    background-image: url(../assets/img/baerbar.webp); 
 }
 
 .drinkRelateret_vin{
@@ -781,7 +780,7 @@ p, h1, h2, h3, h4, h5, h6, li{
     background-position: center;
     height: 20vh;
     background-size: cover;
-    background-image: url(/assets/img/vin_whiskey_lounge.webp); 
+    background-image: url(../assets/img/vin_whiskey_lounge.webp); 
 }
 
 .drinkRelateret_bryghus{
@@ -791,7 +790,7 @@ p, h1, h2, h3, h4, h5, h6, li{
     background-position: center;
     height: 20vh;
     background-size: cover;
-    background-image: url(/assets/img/bryghus_beer.webp); 
+    background-image: url(../assets/img/bryghus_beer.webp); 
 }
 
 .drinkRelateret_cocktail{
@@ -801,7 +800,7 @@ p, h1, h2, h3, h4, h5, h6, li{
     background-position: center;
     height: 20vh;
     background-size: cover;
-    background-image: url(/assets/img/cocktailbar.webp); 
+    background-image: url(../assets/img/cocktailbar.webp); 
 }
 
 .drinkRelateret_have{
@@ -811,7 +810,7 @@ p, h1, h2, h3, h4, h5, h6, li{
     background-position: center;
     height: 20vh;
     background-size: cover;
-    background-image: url(/assets/img/havebar.webp); 
+    background-image: url(../assets/img/havebar.webp); 
 }
 
 .drinkRelateret_skov{
@@ -821,7 +820,7 @@ p, h1, h2, h3, h4, h5, h6, li{
     background-position: center;
     height: 20vh;
     background-size: cover;
-    background-image: url(/assets/img/skovbar.webp); 
+    background-image: url(../assets/img/skovbar.webp); 
 }
 
 .drinkRelateret_vade{
@@ -831,7 +830,7 @@ p, h1, h2, h3, h4, h5, h6, li{
     background-position: center;
     height: 20vh;
     background-size: cover;
-    background-image: url(/assets/img/vadebar.webp); 
+    background-image: url(../assets/img/vadebar.webp); 
 }
 
 /* Overall mad nav styling */
